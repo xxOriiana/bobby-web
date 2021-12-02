@@ -16,41 +16,25 @@
 
     <header>
 
-        <nav>
-            <input type="checkbox" id="bar">
-            <label for="bar" class="bar-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <div class="logo">
-                <!-- <img class="imagen-logo" src="img/logo.png" alt=""> <div class="texto-cabezera">Bee Chic </div> -->
-                <p> Elite SoCal Builders </p>
-            </div>
+        <div class="topnav" id="myTopnav">
 
-            <ul>
 
-                <li><a href="#">Home</a></li>
-                <!-- <li><a href="#">About</a></li> -->
-                <li><a href="#servicios--l">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
 
-                <section class="social-barra">
-                    <div class="content">
-                        <input type="checkbox" id="click">
-                        <label for="click" class="share-btn">
-                            <span class="fas fa-share-alt"></span>
-                            <a href="mailto:ivanarellano@gmail.com"</a><span class="fab fa-google"></span></a>
-                            <a href="#"><span class="fab fa-instagram"></span></a>
-                            <a href="#"><span class="fab fa-facebook"></span></a>
-                        </label>
-                    </div>
-                </section>
+            <a href="#home" class="active"></a>
+            <a href="#home" class="active">Home</a>
+            <a href="#servicios--l">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
 
-            </ul>
-        </nav>
+
+        </div>
 
     </header>
 
+   
 
     <main class="main1">
 
@@ -145,10 +129,15 @@
 
     </main>
 
+   
+
 
 
     <script src="Js/typed.js@2.0.js"></script>
     <script src="Js/main.js"></script>
+    <script>function myFunction() { var x = document.getElementById("myTopnav"); if (x.className === "topnav") { x.className += " responsive"; } else { x.className = "topnav"; } }</script>
+
+
 </body>
 
 </html>
